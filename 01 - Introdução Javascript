@@ -1,5 +1,5 @@
-// 🚀 Introdução ao JavaScript
-// Esse código mostra os conceitos básicos da linguagem de forma simples e comentada.
+// Introdução ao JavaScript
+// Esse código mostra os conceitos básicos da linguagem de forma simples.
 
 // 1. Declaração de variáveis
 let nome = "Arthur"; // 'let' permite criar variáveis que podem mudar
@@ -26,21 +26,38 @@ if (idade >= 18) {
 }
 
 // 5. Laço de repetição (for)
+// Executa um número definido de vezes, baseado em uma condição de início, fim e incremento
 for (let i = 0; i < lista.length; i++) {
   console.log("Item da lista:", lista[i]);
 }
 
-// 6. Função
+// 6. Laço de repetição (while)
+// Executa enquanto a condição for verdadeira
+let contador = 0;
+while (contador < 3) {
+  console.log("Contador com while:", contador);
+  contador++;
+}
+
+// 7. Laço de repetição (do...while)
+// Executa pelo menos uma vez, mesmo que a condição seja falsa
+let tentativa = 0;
+do {
+  console.log("Tentativa com do...while:", tentativa);
+  tentativa++;
+} while (tentativa < 3);
+
+// 8. Função
 function saudacao(nome) {
   return "Olá, " + nome + "!";
 }
 
 console.log(saudacao("Arthur"));
 
-// 7. Manipulação de DOM (se estiver num HTML)
+// 9. Manipulação de DOM (se estiver num HTML)
 document.body.style.backgroundColor = "black"; // Muda a cor de fundo da página
 
-// 8. Eventos (interação com usuário)
+// 10. Eventos (interação com usuário)
 document.addEventListener("click", function () {
   alert("Você clicou na página!");
 });
