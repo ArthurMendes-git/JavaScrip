@@ -1,0 +1,46 @@
+// 🚀 Introdução ao JavaScript
+// Esse código mostra os conceitos básicos da linguagem de forma simples e comentada.
+
+// 1. Declaração de variáveis
+let nome = "Arthur"; // 'let' permite criar variáveis que podem mudar
+const idade = 16;    // 'const' cria variáveis que não mudam
+
+// 2. Tipos de dados
+let numero = 10;           // Número
+let texto = "Olá mundo";   // String (texto)
+let verdadeiro = true;     // Booleano (true ou false)
+let lista = [1, 2, 3];      // Array (lista de valores)
+let objeto = { nome: "Arthur", idade: 16 }; // Objeto (estrutura com chave e valor)
+
+// 3. Operadores
+let soma = numero + 5;     // Adição
+let subtracao = numero - 2; // Subtração
+let multiplicacao = numero * 3; // Multiplicação
+let divisao = numero / 2;  // Divisão
+
+// 4. Condicional (if/else)
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+// 5. Laço de repetição (for)
+for (let i = 0; i < lista.length; i++) {
+  console.log("Item da lista:", lista[i]);
+}
+
+// 6. Função
+function saudacao(nome) {
+  return "Olá, " + nome + "!";
+}
+
+console.log(saudacao("Arthur"));
+
+// 7. Manipulação de DOM (se estiver num HTML)
+document.body.style.backgroundColor = "black"; // Muda a cor de fundo da página
+
+// 8. Eventos (interação com usuário)
+document.addEventListener("click", function () {
+  alert("Você clicou na página!");
+});
